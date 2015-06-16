@@ -1,0 +1,17 @@
+<!-- disable-animation=true - see disableAnimationDirective.js -->
+
+<div id="modal-cart" disable-animation="true">
+	<div class="modal-header">
+		<h3 class="modal-title">Shopping Cart Summary</h3>
+	</div>
+
+	<div class="modal-body">
+		<p>There are {{ totalItems }} items in your shoppng cart.</p>
+		<p>Total price: {{ total | currency}}</p>
+	</div>
+
+	<div class="modal-footer">
+		<button class="btn btn-success" ng-click="ok()">Ok</button>
+		<button class="btn btn-default" ng-click="cancel()">Cancel</button>
+	</div>
+</div>
